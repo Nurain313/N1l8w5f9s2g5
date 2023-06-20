@@ -1,0 +1,28 @@
+Today: 2023-06-20 12:04:12.705546+03:00
+
+BB Signals for EURUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDJPY (1h timeframe): Buy Take Profit at: 141.812065
+BB Signals for AUDUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for NZDUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPJPY (1h timeframe): Buy Take Profit at: 181.270815
+BB Signals for AUDJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for CADJPY (1h timeframe): Buy Take Profit at: 107.271113
+BB Signals for CHFJPY (1h timeframe): Buy Take Profit at: 158.112591
+BB Signals for NZDJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURGBP (1h timeframe): Sell Take Profit at: 0.853819
+BB Signals for GBPCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for CADCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for NZDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURCHF (1h timeframe): Sell Take Profit at: 0.978858
+BB Signals for EURCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURAUD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURNZD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDZAR (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDTRY (1h timeframe): Hold Take Profit at: 0.0

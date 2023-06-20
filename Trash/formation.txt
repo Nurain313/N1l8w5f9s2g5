@@ -1,0 +1,171 @@
+this are txt file with samples data of what they contain:
+
+BB_signals.txt
+BB Signals for GBPUSD (1h timeframe):	Hold
+BB Signals for USDJPY (1h timeframe):	Hold
+BB Signals for AUDUSD (1h timeframe):	Hold
+BB Signals for USDCAD (1h timeframe):	Hold
+BB Signals for USDCHF (1h timeframe):	Hold
+BB Signals for NZDUSD (1h timeframe):	Hold
+BB Signals for EURJPY (1h timeframe):	Hold
+BB Signals for GBPJPY (1h timeframe):	Hold
+BB Signals for AUDJPY (1h timeframe):	Hold
+BB Signals for CADJPY (1h timeframe):	Hold
+BB Signals for CHFJPY (1h timeframe):	Hold
+BB Signals for NZDJPY (1h timeframe):	Hold
+BB Signals for EURGBP (1h timeframe):	Hold
+BB Signals for GBPCHF (1h timeframe):	Hold
+BB Signals for GBPNZD (1h timeframe):	Hold
+BB Signals for GBPAUD (1h timeframe):	Hold
+BB Signals for GBPCAD (1h timeframe):	Hold
+BB Signals for AUDNZD (1h timeframe):	Hold
+BB Signals for EURNZD (1h timeframe):	Hold
+BB Signals for USDMXN (1h timeframe):	Hold
+BB Signals for USDZAR (1h timeframe):	Hold
+BB Signals for USDTRY (1h timeframe):	Hold
+
+
+
+RSI_singals.txt
+RSI Signals for EURUSD (1h timeframe):	Sell
+RSI Signals for GBPUSD (1h timeframe):	Sell
+RSI Signals for USDJPY (1h timeframe):	Hold
+RSI Signals for USDCHF (1h timeframe):	Buy
+RSI Signals for EURGBP (1h timeframe):	Hold
+RSI Signals for GBPCHF (1h timeframe):	Hold
+RSI Signals for GBPNZD (1h timeframe):	Hold
+RSI Signals for GBPAUD (1h timeframe):	Hold
+RSI Signals for GBPCAD (1h timeframe):	Hold
+RSI Signals for AUDNZD (1h timeframe):	Hold
+RSI Signals for EURCAD (1h timeframe):	Hold
+RSI Signals for EURAUD (1h timeframe):	Hold
+RSI Signals for EURNZD (1h timeframe):	Hold
+RSI Signals for USDMXN (1h timeframe):	Hold
+RSI Signals for USDZAR (1h timeframe):	Hold
+RSI Signals for USDTRY (1h timeframe):	Hold
+
+
+MA_signals.txt
+MA Signals for EURUSD (1h timeframe): Buy
+MA Signals for GBPUSD (1h timeframe): Buy
+MA Signals for USDJPY (1h timeframe): Hold
+MA Signals for AUDUSD (1h timeframe): Buy
+MA Signals for USDCAD (1h timeframe): Sell
+MA Signals for USDCHF (1h timeframe): Sell
+MA Signals for NZDUSD (1h timeframe): Buy
+MA Signals for EURJPY (1h timeframe): Buy
+MA Signals for EURGBP (1h timeframe): Buy
+MA Signals for GBPCHF (1h timeframe): Hold
+MA Signals for GBPNZD (1h timeframe): Buy
+MA Signals for GBPAUD (1h timeframe): Hold
+MA Signals for GBPCAD (1h timeframe): Buy
+MA Signals for AUDNZD (1h timeframe): Buy
+MA Signals for AUDCAD (1h timeframe): Buy
+MA Signals for AUDCHF (1h timeframe): Hold
+MA Signals for CADCHF (1h timeframe): Sell
+MA Signals for NZDCHF (1h timeframe): Sell
+MA Signals for EURNZD (1h timeframe): Buy
+MA Signals for USDMXN (1h timeframe): Sell
+MA Signals for USDZAR (1h timeframe): Sell
+MA Signals for USDTRY (1h timeframe): Buy
+
+
+MACD_signals.txt
+MACD Signals for AUDUSD (1h timeframe): 	Hold 
+MACD Signals for USDCAD (1h timeframe): 	Hold 
+MACD Signals for USDCHF (1h timeframe): 	Hold 
+MACD Signals for NZDUSD (1h timeframe): 	Hold 
+MACD Signals for EURJPY (1h timeframe): 	Hold 
+MACD Signals for NZDJPY (1h timeframe): 	Hold 
+MACD Signals for EURGBP (1h timeframe): 	Hold 
+MACD Signals for GBPCHF (1h timeframe): 	Hold 
+MACD Signals for GBPNZD (1h timeframe): 	Hold 
+MACD Signals for GBPAUD (1h timeframe): 	Hold 
+MACD Signals for GBPCAD (1h timeframe): 	Hold 
+MACD Signals for AUDNZD (1h timeframe): 	Hold 
+MACD Signals for AUDCAD (1h timeframe): 	Hold 
+MACD Signals for AUDCHF (1h timeframe): 	Hold 
+MACD Signals for CADCHF (1h timeframe): 	Hold 
+MACD Signals for NZDCHF (1h timeframe): 	Hold 
+MACD Signals for EURCHF (1h timeframe): 	Hold 
+MACD Signals for EURCAD (1h timeframe): 	Hold 
+MACD Signals for EURAUD (1h timeframe): 	Hold 
+MACD Signals for EURNZD (1h timeframe): 	Hold 
+MACD Signals for USDMXN (1h timeframe): 	Hold 
+MACD Signals for USDZAR (1h timeframe): 	Hold 
+MACD Signals for USDTRY (1h timeframe): 	Hold 
+
+
+
+And also i have this code that finds forex pairs that exist in each of this files ( the .txt files)
+
+
+The code:
+import re
+
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    return content
+
+def find_forex_pairs(file_paths):
+    file_contents = [read_file(file_path) for file_path in file_paths]
+
+    # Initialize forex_pairs with pairs from the first file
+    forex_pairs = set(re.findall(r'[A-Z]{6}', file_contents[0]))
+
+    # Iterate over the remaining files and find the intersection of forex_pairs with each file's pairs
+    for content in file_contents[1:]:
+        pairs = set(re.findall(r'[A-Z]{6}', content))
+        forex_pairs = forex_pairs.intersection(pairs)
+
+    return forex_pairs
+
+
+# List of file paths
+file_paths = ['BB_signals.txt', 'MA_signals.txt', 'MACD_signals.txt', 'RSI_signals.txt']
+
+# Finding forex pairs
+forex_pairs = find_forex_pairs(file_paths)
+
+# Printing the forex pairs
+print("Forex market pairs:")
+for pair in forex_pairs:
+    print(pair)
+
+
+
+The output of the code:
+PS C:\Users\val\Desktop\Trading\trash> python final.py                      
+Forex market pairs:
+EURGBP
+USDMXN
+AUDNZD
+GBPNZD
+GBPCAD
+EURNZD
+GBPAUD
+USDTRY
+USDCHF
+USDZAR
+GBPCHF
+PS C:\Users\val\Desktop\Trading\trash>
+
+
+
+What i want from you is to help me write the best code that cad do this (i just don't know what or how to explain this to you)
+
+Note this is just an example:
+
+Pair | Signals | from 
+GBPCAD | Hold \n Sell\n Hold\n Hold | BB \n MA \n MACD \n RSI
+EURGBP | Sell \n Sell\n Sell\n Buy | BB \n MA \n MACD \n RSI
+USDZAR | Hold \n Sell\n Buy\n Hold | BB \n MA \n MACD \n RSI
+
+
+
+
+so from the info above, if pair has more than a half of maybe hold or sell or buy then the sell or buy or hold wins. 
+please feel free to ask me question if you do not understand somewhere to make thing easy and accurate.
+
+please first condition is that the pair must appear in each .txt file then the signal must appear more than twice from the .txt files

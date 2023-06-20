@@ -1,0 +1,32 @@
+Today: 2023-06-20 12:03:33.755182+03:00
+
+MA Signals for EURUSD (1h timeframe): Hold take_profit: 0.0
+MA Signals for GBPUSD (1h timeframe): Sell take_profit: 1.275921
+MA Signals for USDJPY (1h timeframe): Hold take_profit: 0.0
+MA Signals for AUDUSD (1h timeframe): Sell take_profit: 0.678538
+MA Signals for USDCAD (1h timeframe): Buy take_profit: 1.324484
+MA Signals for USDCHF (1h timeframe): Buy take_profit: 0.898584
+MA Signals for NZDUSD (1h timeframe): Sell take_profit: 0.617804
+MA Signals for EURJPY (1h timeframe): Hold take_profit: 0.0
+MA Signals for GBPJPY (1h timeframe): Sell take_profit: 180.548184
+MA Signals for AUDJPY (1h timeframe): Sell take_profit: 96.00261
+MA Signals for CADJPY (1h timeframe): Hold take_profit: 0.0
+MA Signals for CHFJPY (1h timeframe): Sell take_profit: 157.479408
+MA Signals for NZDJPY (1h timeframe): Sell take_profit: 87.387878
+MA Signals for EURGBP (1h timeframe): Buy take_profit: 0.857321
+MA Signals for GBPCHF (1h timeframe): Buy take_profit: 1.148673
+MA Signals for GBPNZD (1h timeframe): Buy take_profit: 2.070032
+MA Signals for GBPAUD (1h timeframe): Buy take_profit: 1.884281
+MA Signals for GBPCAD (1h timeframe): Sell take_profit: 1.68642
+MA Signals for AUDNZD (1h timeframe): Sell take_profit: 1.096263
+MA Signals for AUDCAD (1h timeframe): Sell take_profit: 0.896673
+MA Signals for AUDCHF (1h timeframe): Sell take_profit: 0.608331
+MA Signals for CADCHF (1h timeframe): Buy take_profit: 0.679747
+MA Signals for NZDCHF (1h timeframe): Sell take_profit: 0.55376
+MA Signals for EURCHF (1h timeframe): Buy take_profit: 0.982882
+MA Signals for EURCAD (1h timeframe): Hold take_profit: 0.0
+MA Signals for EURAUD (1h timeframe): Buy take_profit: 1.612318
+MA Signals for EURNZD (1h timeframe): Buy take_profit: 1.771185
+MA Signals for USDMXN (1h timeframe): Hold take_profit: 0.0
+MA Signals for USDZAR (1h timeframe): Hold take_profit: 0.0
+MA Signals for USDTRY (1h timeframe): Hold take_profit: 0.0

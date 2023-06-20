@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Updates</title>
+    <script type="text/javascript">
+        if (typeof(EventSource) !== "undefined") {
+            var source = new EventSource("/updates");
+            source.onmessage = function(event) {
+                document.getElementById("updates").innerHTML = event.data;
+            };
+        } else {
+            document.getElementById("updates").innerHTML = "Your browser doesn't support Server-Sent Events.";
+        }
+    </script>
+</head>
+<body>
+    <h1>Live Updates</h1>
+    <div id="updates"></div>
+</body>
+</html>

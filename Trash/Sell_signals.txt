@@ -1,0 +1,33 @@
+i want a live fronted webframe for python to be able to receive live updates from a .txt file. Note that the .txt file is always updated after every 3 minutes.What i want from the txt file and be updated in the frontend includes the forex market pair (eg: EURUSD), the Signal (eg: Hold if Hold, Sell if Sell, Buy if Buy), the Take profit (Note if just Buy or sell Then The take profit should be present. This is an example of what the txt file contains:
+Today: 2023-06-20 09:58:44.036298+03:00
+
+BB Signals for EURUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for NZDUSD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for CADJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for CHFJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for NZDJPY (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURGBP (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPNZD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPAUD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for GBPCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDNZD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDCAD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for AUDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for CADCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for NZDCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURCHF (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURCAD (1h timeframe): Sell Take Profit at: 1.44237
+BB Signals for EURAUD (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for EURNZD (1h timeframe): Sell Take Profit at: 1.765272
+BB Signals for USDMXN (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDZAR (1h timeframe): Hold Take Profit at: 0.0
+BB Signals for USDTRY (1h timeframe): Hold Take Profit at: 0.0
